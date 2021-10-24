@@ -5,32 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
     <title>Megaterio</title>
 </head>
-<body class="w-full h-full sm:px-12 xl:24 bg-gray-900 text-white relative">
-    
-    
-    <header class="w-full h-screen flex flex-col">
-        <div class="w-full h-20 flex justify-start items-center">
-            <a class="w-1/2 flex items-center" href="/index.html">
-                <img src="" alt="logo">
-                <h1 class="text-2xl font-bold tracking-wider ml-8">Megaterio</h1>
-            </a>
-            <nav class="w-1/2 flex justify-end items-center py-4">
-                <ul class="flex space-x-6">
-                    <li class="py-2 px-4 text-sm font-light tracking-wide"><a href="">Sobre</a></li>
-                    <li class="py-2 px-4 text-sm font-light tracking-wide"><a href="">Serviços</a></li>
-                    <li class="py-2 px-4 text-sm font-light tracking-wide"><a href="">Portifolio</a></li>
-                </ul>
-                <button class="ml-12 px-4 py-2 border border-gray-700 rounded-lg hover:bg-pink-700">
-                    <span class="text-sm font-semibold traking-wide capitalize">contato</span>
+<body class="w-screen h-screen bg-gray-900 text-white">
+    <div class="w-full h-full sm:px-12 flex flex-col">
+        <header class="w-full h-auto mt-2 flex">
+                <button id="btn-megaterio"class="w-1/2 flex items-center">
+                    <img class="w-16 h-16" src="/assets/images/logo.png" alt="logo">
+                    <h1 class="text-2xl font-bold tracking-wider ml-8">Megaterio</h1>
                 </button>
-            </nav>
-        </div>
-        
-        <section class="w-full h-full flex relative">
-            <div class="w-1/4 h-60 ml-20 mt-12">
+                <nav class="w-1/2 flex justify-end items-center py-4">
+                    <ul class="flex space-x-2">
+                        <li class="text-sm font-light tracking-wide hover:border-b border-pink-700">
+                            <button id="btn-servicos" class="w-full h-full py-2 px-4">Serviços</button>
+                        </li>
+                        <li class="text-sm font-light tracking-wide hover:border-b border-pink-700">
+                            <button id="btn-portifolio" class="w-full h-full py-2 px-4">Portifolio</button>
+                        </li>
+                        <li class="text-sm font-light tracking-wide hover:border-b border-pink-700">
+                            <button id="btn-sobre" class="w-full h-full py-2 px-4">Sobre</button>
+                        </li>
+                    </ul>
+                    <a href="mailto:contato@megaterio.com.br" class="ml-12 px-4 py-2 border border-gray-700 rounded-lg hover:bg-pink-700">
+                        <span class="text-sm font-semibold traking-wide capitalize">contato</span>
+                    </a>
+                </nav>
+        </header>
+    
+        <section id="megaterio" class="w-full h-full">
+    
+            <article class="w-1/4 h-auto ml-20 mt-12">
                 <h2 class="text-4xl font-bold text-purple-700 tracking-wider">
                     Desenvolvimento Web facil, agil e customizado para o seu negócio
                 </h2>
@@ -39,30 +43,37 @@
                     disponiveis. Nossa missão e tornar a experiência da Web
                     acessivel para todos os publicos.
                 </p>
-            </div>
-            <div id="hero" class="w-1/2 h-full absolute right-12 top-12 z-2 bg-local bg-cover rounded-lg"
-            style="background-image: url(/assets/images/luca-bravo-XJXWbfSo2f0-unsplash.jpg);">
-            <!-- <div class="w-full h-full bg-white bg-opacity-10 backdrop-filter backdrop-blur-sm rounded-lg"></div> -->
-            </div>
-            <div class="w-1/2 h-60 z-5 absolute right-12 top-72 bg-purple-700 bg-opacity-20 backdrop-filter backdrop-blur-sm">
-                <h3>Wordpress</h3>
-            </div>
+            </article>
+         
+            <footer class="w-auto h-auto ml-20 mt-10 flex space-x-6 items-end">
+                <div class="w-32 h-32 flex justify-center items-center bg-gray-800 rounded-lg">
+                    <p class="text-center">Estudio Caeté</p>
+                </div>
+                <div class="w-32 h-32 flex justify-center items-center bg-gray-800 rounded-lg">
+                    <p class="text-center">Estudio Caeté</p>
+                </div>
+                <div class="w-32 h-32 flex justify-center items-center bg-gray-800 rounded-lg">
+                    <p class="text-center">Estudio Caeté</p>
+                </div>
+    
+            </footer>
         </section>
-
-
-        <footer class="w-auto h-auto mb-4 ml-20 flex space-x-6">
-            <div class="w-32 h-32 flex justify-center items-center bg-gray-800 rounded-lg">
-                <p class="text-center">Estudio Caeté</p>
-            </div>
-            <div class="w-32 h-32 flex justify-center items-center bg-gray-800 rounded-lg">
-                <p class="text-center">Estudio Caeté</p>
-            </div>
-            <div class="w-32 h-32 flex justify-center items-center bg-gray-800 rounded-lg">
-                <p class="text-center">Estudio Caeté</p>
-            </div>
-
-        </footer>
-    </header>
+        
+        <section id="servicos" class="hidden w-full h-full flex justify-center items-center">
+            <h2 class="text-2xl">serviços</h2>
+    
+        </section>
+    
+        <section id="portifolio" class="hidden w-full h-full flex justify-center items-center">
+            <h2 class="text-2xl">portifolio</h2>
+    
+        </section>
+        
+        <section id="sobre" class="hidden w-full h-full flex justify-center items-center">
+            <h2 class="text-2xl">sobre</h2>
+    
+        </section>
+    </div>
     
     <script src="/assets/main.js"></script>
 </body>
