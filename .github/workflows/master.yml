@@ -1,7 +1,5 @@
-on: 
-  push: 
-    branches: master
 name: 🚀 Deploy website on push
+on: [push]
 jobs:
   deploy:
     name: 🎉 Deploy
@@ -21,4 +19,4 @@ jobs:
 
     - name: deploy website
         branch: master
-        folder: ./public
+        folder: public
