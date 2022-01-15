@@ -1,1 +1,1 @@
-alert('funciona');
+import functionalities from './models/functionalities.js';
