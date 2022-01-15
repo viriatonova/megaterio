@@ -17,13 +17,14 @@ jobs:
         username: ${{ secrets.ftp_user }}
         password: ${{ secrets.ftp_password }}
         exclude: |
-          .gitignore
-          **/.git*
-          **/.git*/**
-          **/node_modules/**
-          **/src/**
-          *.json
-          *.MD
-          tailwind.config.js
-          webpack.config.js
-          LICENSE
+          - **.github**
+          - **.gitignore**
+          - **/.git*
+          - **/.git*/**
+          - **/node_modules/**
+          - **/src/**
+          - **.json**
+          - **.MD**
+          - **tailwind.config.js**
+          - **webpack.config.js**
+          - **LICENSE**
