@@ -1,0 +1,1 @@
+import functionalities from './models/functionalities.js';

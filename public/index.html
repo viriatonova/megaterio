@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <!-- css dev -->
+    <!-- <link href="./assets/css/tailwind-dev.css" rel="stylesheet"> -->
+    <!-- css prod -->
+    <link href="./assets/css/index.css" rel="stylesheet">
     <title>Megaterio</title>
 </head>
 <body class="w-screen h-screen bg-gray-900 text-white">
     <div class="w-full h-full sm:px-12 flex flex-col">
         <header class="w-full h-auto mt-2 flex">
                 <button id="btn-megaterio"class="w-1/2 flex items-center">
-                    <img class="w-16 h-16" src="/assets/images/logo.png" alt="logo">
+                    <img class="w-16 h-16" src="./assets/images/logo.png" alt="logo">
                     <h1 class="text-2xl font-bold tracking-wider ml-8">Megaterio</h1>
                 </button>
                 <nav class="w-1/2 flex justify-end items-center py-4">
@@ -75,6 +78,6 @@
         </section>
     </div>
     
-    <script src="/assets/main.js"></script>
+    <script src="./assets/js/bundle.js"></script>
 </body>
 </html>
