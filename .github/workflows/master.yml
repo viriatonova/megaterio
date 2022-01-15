@@ -19,12 +19,12 @@ jobs:
         exclude: |
           - **.github**
           - **.gitignore**
-          - **/.git*
+          - **.git*
           - **/.git*/**
           - **/node_modules/**
-          - **/src/**
+          - **./src/**
           - **.json**
-          - **.MD**
+          - **.md**
           - **tailwind.config.js**
           - **webpack.config.js**
           - **LICENSE**
