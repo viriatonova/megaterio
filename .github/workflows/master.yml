@@ -17,14 +17,8 @@ jobs:
         username: ${{ secrets.ftp_user }}
         password: ${{ secrets.ftp_password }}
         exclude: |
-          - **.github**
-          - **.gitignore**
-          - **.git*
-          - **/.git*/**
-          - **/node_modules/**
-          - **./src/**
-          - **.json**
-          - **.md**
-          - **tailwind.config.js**
-          - **webpack.config.js**
-          - **LICENSE**
+          - /src
+          - *.json
+          - *.config.js
+          - LICENCE
+          - 

@@ -194,6 +194,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _models_functionalities_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./models/functionalities.js */ "./src/models/functionalities.js");
 /* harmony import */ var _models_functionalities_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_models_functionalities_js__WEBPACK_IMPORTED_MODULE_0__);
 
+console.log('works');
 })();
 
 /******/ })()
