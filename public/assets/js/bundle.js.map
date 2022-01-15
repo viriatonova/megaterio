@@ -1,0 +1,1 @@
+{"version":3,"file":"bundle.js","mappings":";;;;;AAAAA,KAAK,CAAC,UAAD,CAAL,C","sources":["webpack://megaterio/./src/index.js"],"sourcesContent":["alert('funciona');"],"names":["alert"],"sourceRoot":""}
