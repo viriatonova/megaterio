@@ -1,7 +1,7 @@
+on: push
 name: 🚀 Deploy website on push
-on: [push]
 jobs:
-  deploy:
+  web-deploy:
     name: 🎉 Deploy
 
     runs-on: ubuntu-latest
@@ -16,4 +16,14 @@ jobs:
         server: ${{ secrets.ftp_server }}
         username: ${{ secrets.ftp_user }}
         password: ${{ secrets.ftp_password }}
-        publish_dir: ./public
+        exclude: |
+          .gitignore
+          **/.git*
+          **/.git*/**
+          **/node_modules/**
+          **/src/**
+          *.json
+          *.MD
+          tailwind.config.js
+          webpack.config.js
+          LICENSE
