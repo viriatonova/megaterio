@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "dev": "webpack -w",
-    "css": "npx tailwindcss -i ./src/tailwind.css -o ./assets/css/tailwind-dev.css --watch",
-    "css-prod": "npx tailwindcss -o ./assets/css/index.css --minify"
+    "css": "npx tailwindcss -i ./src/tailwind.css -o ./public/assets/css/tailwind-dev.css --watch",
+    "css-prod": "npx tailwindcss -o ./public/assets/css/index.css --minify"
   },
   "repository": {
     "type": "git",
