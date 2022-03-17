@@ -1,3 +1,12 @@
 @tailwind base;
 @tailwind components;
+
+.btn-mega {
+    @apply px-4 py-2 border border-gray-700 rounded-lg hover:bg-pink-700 
+    text-sm font-semibold tracking-wide capitalize
+}
+
+.nav-link {
+    @apply text-xl font-light hover:border-b border-pink-700
+}
 @tailwind utilities;

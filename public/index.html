@@ -11,73 +11,59 @@
     <title>Megaterio</title>
 </head>
 <body class="w-screen h-screen bg-gray-900 text-white">
-    <div class="w-full h-full sm:px-12 flex flex-col">
-        <header class="w-full h-auto mt-2 flex">
-                <button id="btn-megaterio"class="w-1/2 flex items-center">
-                    <img class="w-16 h-16" src="./assets/images/logo.png" alt="logo">
-                    <h1 class="text-2xl font-bold tracking-wider ml-8">Megaterio</h1>
+    <div id="wrap" class="w-full h-full sm:p-12 flex flex-row">
+
+        <section id="megaterio" class="w-1/3 h-full flex flex-col">
+
+            <header class="w-full h-auto flex justify-start items-center">
+                <button id="btn-megaterio" class="">
+                    <img class="w-24 h-24" src="./assets/images/logo.png" alt="logo">
                 </button>
-                <nav class="w-1/2 flex justify-end items-center py-4">
-                    <ul class="flex space-x-2">
-                        <li class="text-sm font-light tracking-wide hover:border-b border-pink-700">
-                            <button id="btn-servicos" class="w-full h-full py-2 px-4">Serviços</button>
-                        </li>
-                        <li class="text-sm font-light tracking-wide hover:border-b border-pink-700">
-                            <button id="btn-portifolio" class="w-full h-full py-2 px-4">Portifolio</button>
-                        </li>
-                        <li class="text-sm font-light tracking-wide hover:border-b border-pink-700">
-                            <button id="btn-sobre" class="w-full h-full py-2 px-4">Sobre</button>
-                        </li>
-                    </ul>
-                    <a href="mailto:contato@megaterio.com.br" class="ml-12 px-4 py-2 border border-gray-700 rounded-lg hover:bg-pink-700">
-                        <span class="text-sm font-semibold traking-wide capitalize">contato</span>
-                    </a>
-                </nav>
-        </header>
-    
-        <section id="megaterio" class="w-full h-full">
-    
-            <article class="w-1/4 h-auto ml-20 mt-12">
-                <h2 class="text-4xl font-bold text-purple-700 tracking-wider">
+                <h1 class="w-3/4 ml-12 text-5xl font-bold tracking-widest">Megaterio</h1>
+            </header>
+            
+            <nav class="w-full flex justify-start items-center mt-6 py-4">
+                <ul class="flex space-x-6">
+                    <li class="nav-link">
+                        <button id="btn-servicos" class="w-full h-full py-2 px-4 tracking-widest">Serviços</button>
+                    </li>
+                    <li class="nav-link">
+                        <button id="btn-portifolio" class="w-full h-full py-2 px-4 tracking-widest">Portifolio</button>
+                    </li>
+                    <li class="nav-link">
+                        <button id="btn-sobre" class="w-full h-full py-2 px-4 tracking-widest">Sobre</button>
+                    </li>
+                    <li class="nav-link">
+                        <button id="" href="mailto:contato@megaterio.com.br" class="w-full h-full py-2 px-4 tracking-widest">Contato</button>
+                    </li>
+                </ul>
+            </nav>
+            
+            <article class="w-full h-auto mt-20">
+                <h2 class="text-5xl font-bold text-purple-700 tracking-wider">
                     Desenvolvimento Web facil, agil e customizado para o seu negócio
                 </h2>
-                <p class="mt-4 text-md font-light tracking-wide">
+                <p class="mt-8 text-lg font-light tracking-wider">
                     Construa sua presença digital com as melhores tecnologias
                     disponiveis. Nossa missão e tornar a experiência da Web
                     acessivel para todos os publicos.
                 </p>
             </article>
-         
-            <footer class="w-auto h-auto ml-20 mt-10 flex space-x-6 items-end">
-                <div class="w-32 h-32 flex justify-center items-center bg-gray-800 rounded-lg">
-                    <p class="text-center">Estudio Caeté</p>
-                </div>
-                <div class="w-32 h-32 flex justify-center items-center bg-gray-800 rounded-lg">
-                    <p class="text-center">Estudio Caeté</p>
-                </div>
-                <div class="w-32 h-32 flex justify-center items-center bg-gray-800 rounded-lg">
-                    <p class="text-center">Estudio Caeté</p>
-                </div>
-    
+            
+            <h2 class="w-3/4 mt-12 text-xl font-light tracking-wider">Acompanhe nossas Redes Sociais:</h2>
+
+            <footer class="w-auto h-auto mt-12 flex space-x-6 items-end">
+                <h3>footer aqui</h3>
             </footer>
+
         </section>
         
-        <section id="servicos" class="hidden w-full h-full flex justify-center items-center">
-            <h2 class="text-2xl">serviços</h2>
+        <aside class="w-2/3 h-full px-4 flex justify-center items-center">
+            <h3 class="text-5xl font-bold text-purple-700 tracking-wider">Site em construção</h3>
+        </aside>
     
-        </section>
-    
-        <section id="portifolio" class="hidden w-full h-full flex justify-center items-center">
-            <h2 class="text-2xl">portifolio</h2>
-    
-        </section>
-        
-        <section id="sobre" class="hidden w-full h-full flex justify-center items-center">
-            <h2 class="text-2xl">sobre</h2>
-    
-        </section>
     </div>
     
-    <script src="./assets/js/bundle.js"></script>
+    <!-- <script src="./assets/js/bundle.js"></script> -->
 </body>
 </html>
