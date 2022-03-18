@@ -1,19 +1,23 @@
-on: push
+on:
+    push:
+        branches:
+          - master
+
 name: 🚀 Deploy website on push
 jobs:
-  web-deploy:
-    name: 🎉 Deploy
-    runs-on: ubuntu-latest
+    web-deploy:
+        name: 🎉 Deploy
+        runs-on: ubuntu-latest
 
-    steps:
-    - name: 🚚 Get latest code
-      uses: actions/checkout@v2
-    
-    - name: 📂 Sync files
-      uses: airvzxf/ftp-deployment-action@latest
-      with:
-        server: ${{ secrets.ftp_server }}
-        username: ${{ secrets.ftp_user }}
-        password: ${{ secrets.ftp_password }}
-        local_dir: "../public"
-        delete: "false"
+        steps:
+            - name: 🚚 Get latest code
+              uses: actions/checkout@v2
+
+            - name: 📂 Sync files
+              uses: airvzxf/ftp-deployment-action@latest
+              with:
+                  server: ${{ secrets.ftp_server }}
+                  username: ${{ secrets.ftp_user }}
+                  password: ${{ secrets.ftp_password }}
+                  local_dir: "../../public"
+                  delete: "false"
