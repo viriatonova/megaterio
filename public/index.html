@@ -1,68 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     <!-- css dev -->
-    <!-- <link href="./assets/css/tailwind-dev.css" rel="stylesheet"> -->
+    <link href="./assets/css/tailwind-dev.css" rel="stylesheet">
     <!-- css prod -->
-    <link href="./assets/css/index.css" rel="stylesheet">
+    <!-- <link href="./assets/css/index.css" rel="stylesheet"> -->
     <title>Megaterio</title>
 </head>
+
 <body class="w-screen h-screen bg-gray-900 text-white">
-    <div id="wrap" class="w-full h-full sm:p-12 flex flex-row">
+    <div id="wrap" class="w-full h-full p-4 bg-cover bg-no-repeat" style="background-image: url('./assets/images/megaback.jpg')">
+        <div class="wrap-backgound">
 
-        <section id="megaterio" class="w-1/2 h-full px-12 flex flex-col">
-
-            <header class="w-full h-auto flex justify-start items-center">
-                <button id="btn-megaterio" class="">
-                    <img class="w-24 h-24" src="./assets/images/logo.png" alt="logo">
+            <header class="mega-header">
+                <button id="btn-megaterio" class="w-1/4 h-auto flex justify-start items-center">
+                    <img class="mega-logo" src="./assets/images/logo.png" alt="logo">
+                    <h1 class="mega-title1">Megaterio</h1>
                 </button>
-                <h1 class="w-3/4 ml-12 text-5xl font-bold tracking-widest">Megaterio</h1>
+                <nav class="mega-nav">
+                    <ul class="flex space-x-12">
+                        <li class="nav-link"><button id="btn-servicos">Serviços</button></li>
+                        <li class="nav-link"><button id="btn-portifolio">Portifolio</button></li>
+                        <li class="nav-link"><button id="btn-sobre" >Sobre</button></li>
+                        <li class="nav-link"><button id="" href="mailto:contato@megaterio.com.br">Contato</button></li>
+                    </ul>
+                </nav>
             </header>
-            
-            <nav class="w-full flex justify-start items-center mt-6 py-4">
-                <ul class="flex space-x-6">
-                    <li class="nav-link">
-                        <button id="btn-servicos" class="w-full h-full py-2 px-4 tracking-widest">Serviços</button>
-                    </li>
-                    <li class="nav-link">
-                        <button id="btn-portifolio" class="w-full h-full py-2 px-4 tracking-widest">Portifolio</button>
-                    </li>
-                    <li class="nav-link">
-                        <button id="btn-sobre" class="w-full h-full py-2 px-4 tracking-widest">Sobre</button>
-                    </li>
-                    <li class="nav-link">
-                        <button id="" href="mailto:contato@megaterio.com.br" class="w-full h-full py-2 px-4 tracking-widest">Contato</button>
-                    </li>
-                </ul>
-            </nav>
-            
-            <article class="w-full h-auto mt-12">
-                <h2 class="text-5xl font-bold text-purple-700 tracking-wider">
-                    Mais do que produtores de conteúdo, somos desenvolvimento de sonhos!
-                </h2>
-                <p class="mt-8 text-lg font-light tracking-wider">
-                    Nosso desafio é construir ambientes digitais que manifestem
-                    sonhos e dêem presença a todos na cibercultura.
-                </p>
-            </article>
-            
-            <h2 class="w-3/4 mt-12 text-xl font-light tracking-wider">Acompanhe nossas Redes Sociais:</h2>
 
-            <footer class="w-auto h-auto mt-12 flex space-x-6 items-end">
-                <h3>footer aqui</h3>
-            </footer>
-            
-        </section>
-        
-        <aside class="w-1/2 h-full px-8 flex justify-center items-center">
-            <img src="./assets/images/lost2.png" alt="">
-        </aside>
-    
+            <section id="megaterio" class="w-full h-full px-8 py-6 flex">
+
+                <article class="mega-home">
+                    <h2 class="mega-titulo-article">
+                        Faça sua Revolução,<br>
+                        Seja sua Revolução 
+                    </h2>
+                    <p class="w-4/5 mt-8 text-lg tracking-wider font-roboto font-thin">
+                        Nosso desafio é construir ambientes digitais que manifestem
+                        sonhos e dêem presença a todos na cibercultura.
+                    </p>
+                    <h3>Acompanhe nossas Redes Sociais:</h3>
+                    <ul class="">
+                        <li>footer</li>
+                        <li>footer</li>
+                        <li>footer</li>
+                        <li>footer</li>
+                    </ul>
+                </article>
+
+                <aside>
+                </aside>
+
+            </section>
+
+            <!-- <aside class="w-1/2 h-full px-8 flex justify-center items-center">
+                <img src="./assets/images/lost2.png" alt="">
+            </aside> -->
+
+        </div>
     </div>
-    
+
+
     <!-- <script src="./assets/js/bundle.js"></script> -->
 </body>
+
 </html>

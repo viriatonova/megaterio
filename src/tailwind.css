@@ -1,12 +1,57 @@
 @tailwind base;
 @tailwind components;
 
-.btn-mega {
-    @apply px-4 py-2 border border-gray-700 rounded-lg hover:bg-pink-700 
-    text-sm font-semibold tracking-wide capitalize
+.mega-header {
+    @apply w-full h-auto py-4 px-8 flex justify-start items-center 
+}
+
+.mega-nav {
+    @apply w-full h-auto flex justify-end items-center
 }
 
 .nav-link {
-    @apply text-xl font-light hover:border-b border-pink-700
+    @apply text-xl font-light border-pink-700
 }
+
+.nav-link button {
+    @apply w-full h-full py-px px-2 tracking-widest text-lg font-bold hover:bg-purple-200
+    hover:rounded-sm hover:text-blue-900 font-roboto
+}
+
+.wrap-backgound{
+    @apply  w-full h-full flex flex-col bg-white/10 backdrop-blur-sm
+    rounded-xl
+}
+
+.mega-logo {
+    @apply w-16 h-16
+}
+
+.mega-title1 {
+    @apply w-full text-4xl ml-6 font-bold tracking-wider text-left font-ubuntu
+}
+
+.mega-home {
+    @apply w-1/2 h-auto mt-6 flex flex-col items-start justify-end
+}
+
+.mega-home h2 {
+    @apply mt-10 text-7xl font-bold text-white tracking-wider font-ubuntu
+}
+
+.mega-home h3 {
+    @apply mt-12 font-thin text-white tracking-wider font-roboto
+
+}
+
+.mega-home ul {
+    @apply w-full h-auto mt-4 flex space-x-6 items-end
+}
+
+.mega-home ul li {
+    @apply w-auto h-auto p-4 bg-white/40 rounded-sm
+}
+
+
+
 @tailwind utilities;
