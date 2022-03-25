@@ -1,7 +1,7 @@
 module.exports = {
   content: [
+    "./public/**/*.{html,js}",
     "./src/**/*.{html,js}",
-    "./public/**/*.{html,js}"
   ],
   theme: {
     fontFamily:{
@@ -10,5 +10,7 @@ module.exports = {
     },
     extend: {},
   },
-  plugins: [],
+  plugins: [
+    (process.env.NODE_ENV === 'production' ? { cssnano: {} } : {})
+  ],
 }
